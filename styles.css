@@ -1,9 +1,28 @@
 .container {
-    display: flex;
     height: calc(100vh - 20px);
+    display: grid;
+    grid-template-areas: 
+        "a a"
+        "b c"
+    ;
 }
 
 .item {
     width: 100%;
     border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-a {
+    grid-area: a;
+}
+
+.item-b {
+    grid-area: b;
+}
+
+.item-c {
+    grid-area: c;
 }
