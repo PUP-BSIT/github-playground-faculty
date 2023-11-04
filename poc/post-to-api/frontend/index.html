@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="sendPost()">
+            Send Post API Through JS.
+    </button>
+    <form action="http://localhost/test.php" method="post">
+        <input type="hidden"
+            value="Hello World!"
+            name="message">
+        <button type="submit">Post through form</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
